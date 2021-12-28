@@ -1,8 +1,8 @@
 package com.empresa.poc.iptuapi.domain;
 
-import javax.persistence.*;
-import javax.xml.crypto.Data;
-import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Iptu {
@@ -16,7 +16,7 @@ public class Iptu {
     private String ano;
 
     @Column(name = "\"numeroDaNl\"")
-    private String numero;
+    private String numerodanl;
 
     @Column(name = "\"dataDoCadastramento\"")
     private String data;
@@ -41,16 +41,16 @@ public class Iptu {
     private String nome2;
 
     @Column(name = "\"numeroDoCondominio\"")
-    private String numerodoCondominio;
+    private String numerodocondominio;
 
     @Column(name = "\"codlogDoImovel\"")
     private String codlog;
 
-    @Column(name = "\"nomeDeLogradouroDoImovel\"")
+    @Column(name = "\"logradouro\"")
     private String logradouro;
 
-    @Column(name = "\"numeroDoImovel\"")
-    private String numerodoImovel;
+    @Column(name = "\"numero\"")
+    private String numerodoimovel;
 
     @Column(name = "\"complementoDoImovel\"")
     private String complemento;
@@ -91,13 +91,13 @@ public class Iptu {
     @Column(name = "\"quantidadeDePavimentos\"")
     private String quantidadedepavimentos;
 
-    @Column(name = "\"testadaParaCalculo\"")
+    @Column(name = "\"testadaDeCalculo\"")
     private String testada;
 
     @Column(name = "\"tipoDeUsoDoImovel\"")
     private String tipodeuso;
 
-    @Column(name = "\"tipoDePadraoDaConstrucao\"")
+    @Column(name = "\"tipoDePadraoDaCostrucao\"")
     private String tipodepadrao;
 
     @Column(name = "\"tipoDeTerreno\"")
@@ -107,7 +107,7 @@ public class Iptu {
     private String obsolescencia;
 
     @Column(name = "\"anoDeInicioDaVidaDoContribuinte\"")
-    private String anodeiniciodaVida;
+    private String anodeiniciodavida;
 
     @Column(name = "\"mesDeInicioDaVidaDoContribuinte\"")
     private String mesdeiniciodavida;
@@ -124,8 +124,8 @@ public class Iptu {
         return ano;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNumerodanl() {
+        return numerodanl;
     }
 
     public String getData() {
@@ -156,8 +156,8 @@ public class Iptu {
         return nome2;
     }
 
-    public String getNumerodoCondominio() {
-        return numerodoCondominio;
+    public String getNumerodocondominio() {
+        return numerodocondominio;
     }
 
     public String getCodlog() {
@@ -168,8 +168,8 @@ public class Iptu {
         return logradouro;
     }
 
-    public String getNumerodoImovel() {
-        return numerodoImovel;
+    public String getNumerodoimovel() {
+        return numerodoimovel;
     }
 
     public String getComplemento() {
@@ -244,8 +244,8 @@ public class Iptu {
         return obsolescencia;
     }
 
-    public String getAnodeiniciodaVida() {
-        return anodeiniciodaVida;
+    public String getAnodeiniciodavida() {
+        return anodeiniciodavida;
     }
 
     public String getMesdeiniciodavida() {

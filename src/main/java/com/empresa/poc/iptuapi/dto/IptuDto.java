@@ -1,117 +1,107 @@
 package com.empresa.poc.iptuapi.dto;
 
 import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.xml.crypto.Data;
-import java.util.Date;
 
 public class IptuDto {
 
-    @Column(name = "\"numeroDoContribuinte\"")
+
     private String contribuinte;
 
-    @Column(name = "\"anoDoExercicio\"")
+
     private String ano;
 
-    @Column(name = "\"numeroDaNl\"")
-    private String numero;
 
-    @Column(name = "\"dataDoCadastramento\"")
+    private String numerodanl;
+
+
     private String data;
 
 
-    @Column(name = "\"tipoDeContribuinte1\"")
     private String tipo1;
 
-    @Column(name = "\"cpfCnpjDoContribuinte1\"")
     private String cpfcnpj1;
 
-    @Column(name = "\"nomeDoContribuinte1\"")
     private String nome1;
 
-    @Column(name = "\"tipoDeContribuinte2\"")
     private String tipo2;
 
-    @Column(name = "\"cpfCnpjDoContribuinte2\"")
+
     private String cpfcnpj2;
 
-    @Column(name = "\"nomeDoContribuinte2\"")
+
     private String nome2;
 
 
-    @Column(name = "\"numeroDoCondominio\"")
-    private String numerodoCondominio;
+    private String numerodocondominio;
 
-    @Column(name = "\"codlogDoImovel\"")
+
     private String codlog;
 
-    @Column(name = "\"nomeDeLogradouroDoImovel\"")
+
     private String logradouro;
 
-    @Column(name = "\"numeroDoImovel\"")
-    private String numerodoImovel;
 
-    @Column(name = "\"complementoDoImovel\"")
+    private String numerodoimovel;
+
+
     private String complemento;
 
-    @Column(name = "\"bairroDoImovel\"")
+
     private String bairro;
 
-    @Column(name = "\"referenciaDoImovel\"")
+
     private String referencia;
 
-    @Column(name = "\"cepDoImovel\"")
+
     private String cep;
 
-    @Column(name = "\"quantidadeDeEsquinasFrentes\"")
+
     private String quantidadedeesquinasfrentes;
 
-    @Column(name = "\"fracaoIdeal\"")
+
     private String fracaoideal;
 
-    @Column(name = "\"areaDoTerreno\"")
+
     private String areadoterreno;
 
-    @Column(name = "\"areaConstruida\"")
+
     private String areaconstruida;
 
-    @Column(name = "\"areaOcupada\"")
+
     private String areaocupada;
 
-    @Column(name = "\"valorDoMQDoTerreno\"")
+
     private String valordomqdoterreno;
 
-    @Column(name = "\"valorDoMQDeConstrucao\"")
+
     private String valordomqdeconstrucao;
 
-    @Column(name = "\"anoDaConstrucaoCorrigido\"")
+
     private String anodaconstrucao;
 
-    @Column(name = "\"quantidadeDePavimentos\"")
+
     private String quantidadedepavimentos;
 
-    @Column(name = "\"testadaParaCalculo\"")
+
     private String testada;
 
-    @Column(name = "\"tipoDeUsoDoImovel\"")
+
     private String tipodeuso;
 
-    @Column(name = "\"tipoDePadraoDaConstrucao\"")
+
     private String tipodepadrao;
 
-    @Column(name = "\"tipoDeTerreno\"")
+
     private String tipodeterreno;
 
-    @Column(name = "\"fatorDeObsolescencia\"")
+
     private String obsolescencia;
 
-    @Column(name = "\"anoDeInicioDaVidaDoContribuinte\"")
-    private String anodeiniciodaVida;
 
-    @Column(name = "\"mesDeInicioDaVidaDoContribuinte\"")
+    private String anodeiniciodavida;
+
     private String mesdeiniciodavida;
 
-    @Column(name = "\"faseDoContribuinte\"")
     private String fase;
 
 
@@ -131,6 +121,7 @@ public class IptuDto {
 
     }
 
+
     public String getContribuinte() {
         return contribuinte;
     }
@@ -147,12 +138,12 @@ public class IptuDto {
         this.ano = ano;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNumerodanl() {
+        return numerodanl;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumerodanl(String numerodanl) {
+        this.numerodanl = numerodanl;
     }
 
     public String getData() {
@@ -211,12 +202,12 @@ public class IptuDto {
         this.nome2 = nome2;
     }
 
-    public String getNumerodoCondominio() {
-        return numerodoCondominio;
+    public String getNumerodocondominio() {
+        return numerodocondominio;
     }
 
-    public void setNumerodoCondominio(String numerodoCondominio) {
-        this.numerodoCondominio = numerodoCondominio;
+    public void setNumerodocondominio(String numerodocondominio) {
+        this.numerodocondominio = numerodocondominio;
     }
 
     public String getCodlog() {
@@ -235,12 +226,12 @@ public class IptuDto {
         this.logradouro = logradouro;
     }
 
-    public String getNumerodoImovel() {
-        return numerodoImovel;
+    public String getNumerodoimovel() {
+        return numerodoimovel;
     }
 
-    public void setNumerodoImovel(String numerodoImovel) {
-        this.numerodoImovel = numerodoImovel;
+    public void setNumerodoimovel(String numerodoimovel) {
+        this.numerodoimovel = numerodoimovel;
     }
 
     public String getComplemento() {
@@ -387,12 +378,12 @@ public class IptuDto {
         this.obsolescencia = obsolescencia;
     }
 
-    public String getAnodeiniciodaVida() {
-        return anodeiniciodaVida;
+    public String getAnodeiniciodavida() {
+        return anodeiniciodavida;
     }
 
-    public void setAnodeiniciodaVida(String anodeiniciodaVida) {
-        this.anodeiniciodaVida = anodeiniciodaVida;
+    public void setAnodeiniciodavida(String anodeiniciodavida) {
+        this.anodeiniciodavida = anodeiniciodavida;
     }
 
     public String getMesdeiniciodavida() {
