@@ -4,6 +4,8 @@ import com.empresa.poc.iptuapi.domain.Iptu;
 import com.empresa.poc.iptuapi.dto.IptuDto;
 import com.empresa.poc.iptuapi.repository.IptuRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
@@ -17,7 +19,9 @@ public class IptuService {
     IptuRepository iptuRepository;
 
 
-
+    public Page<Iptu> todosPaginados(Pageable pageable) {
+        return iptuRepository.findAll(pageable);
+    }
 
     public Iptu findByContribuinte(String contribuinte) {
         return iptuRepository.findByContribuinte(contribuinte);
